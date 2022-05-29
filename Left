@@ -1,0 +1,11 @@
+local Players = game.Players
+Players.PlayerRemoving:Connect(function(player)
+
+local args = {
+    [1] = player.Name.." Just Left",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+print[[Moded by: Snox6785]]
