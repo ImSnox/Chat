@@ -2,7 +2,7 @@ local Players = game.Players
 Players.PlayerRemoving:Connect(function(player)
 
 local args = {
-    [1] = player.Name.." Just Left",
+    [1] = player.DisplayName.." Just Left",
     [2] = "All"
 }
 
